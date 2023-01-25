@@ -14,7 +14,12 @@ Using [Capacitor](https://capacitorjs.com/docs), we add native-platform runtime 
 * Copy web assets to native project: `ionic capacitor copy <platform>`
 
 ### Running the app
+Before running the app, do the following:
+* Add file `local.properties` in the `App/android` folder, with `sdk.dir=<path_to_android_sdk>`.
+Or
+* Run command `ionic capacitor open android` which will open android studio and add the above file automatically.
 
+Then:
 * Browser: `ionic serve`
 * Live Reload server: `ionic capacitor run <platform> -l --external`
 * More details on running through Capacitor [Here](https://capacitorjs.com/docs/cli/commands/run)
