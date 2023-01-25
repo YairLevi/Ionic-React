@@ -15,10 +15,8 @@ Using [Capacitor](https://capacitorjs.com/docs), we add native-platform runtime 
 
 ### Running the app
 Before running the app, do the following:
-* Build the app using `ionic capacitor build <platform>`
-
-* Add file `local.properties` in the `App/android` folder, with `sdk.dir=<path_to_android_sdk>`.
-Or
+* Build the app using `ionic capacitor build <platform>`. To avoid opening android studio: `ionic capacitor sync <platform>`.
+* Add file `local.properties` in the `App/android` folder, with `sdk.dir=<path_to_android_sdk>`. Or --
 * Run command `ionic capacitor open android` which will open android studio and add the above file automatically.
 
 Then:
